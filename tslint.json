@@ -1,0 +1,21 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:latest", "tslint-react"],
+  "jsRules": {   
+  },
+  "rules": {
+    "interface-name": [true,"never-prefix"],
+    "object-literal-sort-keys":false,
+    "jsx-no-multiline-js": [false],
+    "no-submodule-imports": [true,"ag-grid-community/dist/styles","jquery","bootstrap"],
+    "quotemark": false,
+    "trailing-comma": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"      
+    ]
+  }
+}
